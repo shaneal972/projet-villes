@@ -18,7 +18,7 @@ if (isset($_POST['submit_form'])) {
         $statement->execute([':ville_nom' => $ville_nom]);
 
         $count = $statement->fetch();
-        if($count > 0) {
+        if($count >= 1) {
             $message =
             '<p class="error">La ville est déjà enregistrée.</p>';
         }else{

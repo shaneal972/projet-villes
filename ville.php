@@ -5,8 +5,8 @@ $id = $_GET['id'];
 $pdo = require 'connect.php';
 
 $sql = 'SELECT ville_id, ville_nom, ville_texte
-            FROM villes
-            WHERE ville_id = :id';
+        FROM villes
+        WHERE ville_id = :id';
 
 $statement = $pdo->prepare($sql);
 $statement->bindParam(':id', $id, PDO::PARAM_INT);

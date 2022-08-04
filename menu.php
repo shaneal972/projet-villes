@@ -1,6 +1,5 @@
 <?php
 
-// $pdo = require 'connect.php';
 
 $sql = 'SELECT ville_id, ville_nom FROM villes';
 
